@@ -1,0 +1,45 @@
+body{
+    background: aqua
+}
+
+find {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 25;
+}
+
+food {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 50;
+}
+
+fast {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 75;
+}
+
+intro {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 25;
+}
+
+info {
+    color: black;
+    font-weight: bold;
+    font-size: 15;
+}
+
+yelp {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 15;
+}
+
+directions {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 15;
+}

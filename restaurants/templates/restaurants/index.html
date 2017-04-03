@@ -1,0 +1,26 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'restaurants/style.css' %}" />
+
+<html>
+<body>
+<p> <find>Find </find><food>Food </food><fast>Fast! </fast></p>
+
+
+{% if restaurant_info %}
+<p> <intro>Here are the restaurants closest to you: </intro></p>
+    <ul>
+    {% for info, url, dir in restaurant_info %}
+            <li><info>{{ info | linebreaks}}</info>
+                <yelp>View it on Yelp: </yelp>  <a href="{{ url }}">{{ url }}</a>  <br/> <br/>
+                <directions>Get directions (Google Maps): </directions>  <a href="{{ dir }}">{{ dir }}</a> </li>
+            <!--<li><a href="/re/{{ question.id }}/">{{ question.question_text }}</a></li>-->
+        {% endfor %}
+    </ul>
+<br/>
+<p> This information was obtained from Yelp (excluding Google Maps directions). </p>
+{% else %}
+    <p> Sorry, we couldn't find any restaurants near you that are open right now. </p>
+{% endif %}
+</body>
+</html>
